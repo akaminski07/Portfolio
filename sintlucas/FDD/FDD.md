@@ -3,7 +3,6 @@
 This FDD describes what should be built for a Portfolio Website for a Software Developer.
 
 ## Functional requirements
-
 1. It should be easy to navigate the portfolio website.
 2. The developer's skills and project experience should be shown.
 3. Detailed project descriptions, including technologies used and challenges overcome.
@@ -18,3 +17,5 @@ This FDD describes what should be built for a Portfolio Website for a Software D
 2. The website should be accessible to people with disabilities.
 3. The website should work in different browsers (Chrome, Firefox, Safari, Edge).
 4. The website should not contain syntax errors or runtime errors.
+
+
