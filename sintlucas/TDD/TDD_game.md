@@ -7,10 +7,15 @@ It outlines the system architecture, components, and technology stack used to bu
 This depends on the chosen framework for building websites. 
 For this project, the system architecture will be based on a client-server model.
 Choose one of the following frameworks:
-- HTML/CSS/JavaScript without any frameworks.
+- HTML/CSS/JavaScript with or without any frameworks.
 - **WordPress:** A content management system (CMS) that uses PHP and MySQL.
 - **Webflow:** A no-code platform that allows you to design and build websites visually.
 - **Wix:** A website builder that uses a drag-and-drop editor.
+- or else.
+
+## Content
+Video's, images and/or gifs should be used in the website.
+By using OBS software, you can record your screen and voice-over to create a video.
 
 ## Testing
 - **IDE:** Used to prevent syntax errors or runtime errors.
