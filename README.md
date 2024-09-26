@@ -54,12 +54,14 @@ In the last week you will present the results:
   * Prepare for the presentation
   * Show the end product
   * Prove that you met the criteria in `sintlucas/ASSESSMENT.MD`
-  * Create a video of the working application:
-    * Before the Presentation & Assessment week, you must create a video of the working application.
-    * The video should show the main functionalities of the application.
-    * It should be a screencast with a voice-over.
-    * The video should be a maximum of 5 minutes long.
-    * Add the video to the `sintlucas` folder.
-    * Give the video a clear name, e.g. `video-portfolio-website-your-name.mp4`.
   * You will be assessed on the criteria in `sintlucas/ASSESSMENT.MD`.
   * You will receive feedback on your work.
+
+## Video of your work
+Create a video of the working application:
+* Before the Presentation & Assessment, you must create a video of the working application.
+* The video should show the main functionalities of the application.
+* It should be a screencast with a voice-over.
+* The video should be a maximum of 5 minutes long.
+* Add the video to the `sintlucas` folder.
+* Give the video a clear name, e.g. `video-portfolioproject-your-name.mp4`.
