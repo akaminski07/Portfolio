@@ -1,5 +1,16 @@
 # Portfolio project
-During this project you will work on your own portfolio website.
+Unlock your creativity and craft a captivating portfolio website!
+
+This project invites you to design and develop your own personal site to showcase your skills, experiences, achievements, and especially your projects to the world. 
+Highlighting your projects is crucial, as they provide tangible evidence of your abilities and the value you can bring. You can think of:
+* A project gallery
+* Detailed Case Studies
+* Interactive Demos 
+* Code Repositories 
+* Video Presentations 
+* Blog Posts or Articles
+
+Remember: Your portfolio must meet all the requirements outlined in the Functional Design Document (FDD).
 
 ## Collect proof of your work in the 'sintlucas' folder
 * Any document you create (FDD.md, TDD.md, REVIEW.md and any other document)
