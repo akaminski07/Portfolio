@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: white;
+}
+
+#jumbotron{
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    align-items: center;
+    padding-left:157px;
+}
+
+.bigText{
+    font-size: 90px;
+    font-family: 'Days One', sans-serif;
+    width: 200px;
+}
+
+.nodeco{
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 20px 40px 40px 0;
+}
+
+#navbar a {
+    text-decoration: none;
+}

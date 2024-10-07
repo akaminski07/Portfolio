@@ -2,47 +2,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Page Title</title>
+    <title>Adrian's Portfolio</title>
 
-    <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Adjust the path as needed -->
-
-    <style>
-        /* You can add internal CSS here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css"> <!-- Adjust the path as needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Your HTML content -->
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 mt-4 mx-4">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4 text-primary">AK</span>
-    </a>
-
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link bg-light text-dark" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-light">Skills</a></li>
+<div id="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Contact</a></li>
     </ul>
-</header>
-<div class="d-flex justify-content-left align-items-center h-75">
-    <div class="text-white" style="margin-left: 50px;">
-        <h1 class="mb-3" style="font-size: 88px;">Adrian Kaminski</h1>
-        <h5 class="mb-4" style="font-size: 32px;">
-            Full-Stack Web Developer
-        </h5>
-        <a data-mdb-ripple-init="" class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A" role="button" rel="nofollow" target="_blank">My Resume</a>
-        <a data-mdb-ripple-init="" class="btn btn-outline-light btn-lg m-2" href="https://github.com/akaminski07" target="_blank" role="button">GitHub</a>
-    </div>
 </div>
+<div id="jumbotron">
+    <p class="bigText">Adrian Kaminski</p>
+</div>
+
 <!-- Link to Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js"></script> <!-- Make sure this path points to your Bootstrap JS file -->
+<script src="js/main.js"></script> <!-- Make sure this path points to your Bootstrap JS file -->
 </body>
