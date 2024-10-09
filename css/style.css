@@ -6,21 +6,25 @@ body {
     color: white;
 }
 
-.jumbotron{
+.jumbotron {
     display: flex;
     width: 80vw;
-    height: 50vh;
+    height: fit-content;
     align-items: center;
-    padding-left:157px;
+    margin-top: 40px;
+    /*padding-left: 157px;*/
     justify-content: space-between;
 }
 
-.bigText{
-    font-size: 90px;
-    width: fit-content;
+.bigText {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 70px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+    height: fit-content;
 }
 
-#navbar{
+#navbar {
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
@@ -34,29 +38,57 @@ body {
 }
 
 #navbar li {
-    margin: 80px 50px 40px 0;
+    margin: 50px 50px 40px 0;
 }
 
-#navbar a {
+#navbar li a {
+    font-size: 13px;
     text-decoration: none;
     text-decoration-color: #222222;
     color: rgba(255, 255, 255, 0.25);
 }
 
-#navbar a:hover {
+#navbar li a:hover {
     transition: color 0.23s ease-in, text-decoration 0.23s;
 
     color: rgba(255, 255, 255);
     text-decoration: underline;
     text-decoration-color: rgba(29, 133, 255, 1);
-    text-underline-offset: 4px;
+    text-underline-offset: 5px;
     text-decoration-thickness: 4px;
 }
 
-.jumbotron .introduction{
-    justify-content: flex-end;
+#navbar li.currentPage a {
+    color: rgba(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: rgba(29, 133, 255, 1);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 4px;
 }
 
+.introduction {
+    justify-content: flex-end;
+    font-size: 10px;
+    margin-left: 200px;
+    text-align: justify;
+}
+
+.jumbotron .introduction p {
+
+}
+
+.mediaButtons {
+
+    background-color: white;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.button{
+
+}
 
 
 
