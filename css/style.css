@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #222222;
     color: white;
+
 }
 
 .jumbotron {
@@ -73,20 +74,58 @@ body {
     text-align: justify;
 }
 
-.jumbotron .introduction p {
-
-}
-
 .mediaButtons {
-
-    background-color: white;
     display: flex;
     width: fit-content;
     height: fit-content;
     justify-content: space-between;
+    margin-top: 20px;
+    gap: 2vw;
 }
 
-.button{
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12.5vw;
+    height: 100vh;
+}
+
+#inIcon{
+    background-image: url("../logo.png");
+    width:3vw;
+    height: 3vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+#ghIcon {
+    background-image: url("../github.png");
+    background-color: #1D85FF;
+    border-radius: 100px;
+    width:3vw;
+    height: 3vw;
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#email{
+    background-image: url("../gmail.png");
+    background-color: #1D85FF;
+    border-radius: 100px;
+    width:3vw;
+    height: 3vw;
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#email:hover, #ghIcon:hover, #inIcon:hover{
+    transition: ease-in, 175ms;
+    box-sizing: border-box;
+    border: 2px solid white;
 
 }
 
