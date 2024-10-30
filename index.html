@@ -11,16 +11,16 @@
 </head>
 <body>
 <!-- Your HTML content -->
-<div class="container">
-    <div id="navbar">
-        <ul>
-            <li class="currentPage"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
 
+<ul id="navbar">
+    <li id="home">Home</li>
+    <li id="about">About</li>
+    <li id="projects">Projects</li>
+    <li id="contact">Contact</li>
+</ul>
+
+
+<div class="home">
     <div class="jumbotron">
         <div class="bigText">Adrian<br>Kaminski</div>
 
@@ -35,13 +35,30 @@
         </div>
     </div>
     <div class="mediaButtons">
-        <a id="inIcon"  href="https://www.linkedin.com/in/adrian-kami%C5%84ski-374aab2bb/" target="_blank"></a>
-        <a id="ghIcon" href="https://github.com/akaminski07" target="_blank"></a>
-        <a id="email" href="javascript:void(0)" class="button"></a>
+        <a id="inIcon" class="socialIcons" href="https://www.linkedin.com/in/adrian-kami%C5%84ski-374aab2bb/" target="_blank"></a>
+        <a id="ghIcon" class="socialIcons" href="https://github.com/akaminski07" target="_blank"></a>
+        <a id="email" href="javascript:void(0)" class="button socialIcons"></a>
     </div>
 </div>
 <div></div>
-<div class="container"></div>
+<div class="about">
+
+<div class="header">About me</div>
+    <div id="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    
+</div>
+<div class="projects">
+    <div class="header">Projects</div>
+</div>
+
+<div class="contact">
+    <div class="header">Contact</div>
+</div>
+
 
 <!-- Link to Bootstrap JS -->
 <script src="js/main.js"></script> <!-- Make sure this path points to your Bootstrap JS file -->

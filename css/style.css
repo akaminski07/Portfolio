@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #222222;
     color: white;
-
 }
 
 .jumbotron {
@@ -13,15 +12,15 @@ body {
     height: fit-content;
     align-items: center;
     margin-top: 40px;
-    /*padding-left: 157px;*/
-    justify-content: space-between;
+
+
 }
 
 .bigText {
     display: flex;
     justify-content: flex-start;
     font-size: 70px;
-    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
 }
 
@@ -29,6 +28,9 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1;
 }
 
 #navbar ul {
@@ -40,26 +42,24 @@ body {
 
 #navbar li {
     margin: 50px 50px 40px 0;
-}
-
-#navbar li a {
+    list-style-type: none;
     font-size: 13px;
     text-decoration: none;
     text-decoration-color: #222222;
     color: rgba(255, 255, 255, 0.25);
 }
 
-#navbar li a:hover {
+#navbar li:hover {
     transition: color 0.23s ease-in, text-decoration 0.23s;
-
     color: rgba(255, 255, 255);
     text-decoration: underline;
     text-decoration-color: rgba(29, 133, 255, 1);
     text-underline-offset: 5px;
     text-decoration-thickness: 4px;
+    cursor: pointer;
 }
 
-#navbar li.currentPage a {
+#navbar li.currentPage {
     color: rgba(255, 255, 255);
     text-decoration: underline;
     text-decoration-color: rgba(29, 133, 255, 1);
@@ -70,7 +70,7 @@ body {
 .introduction {
     justify-content: flex-end;
     font-size: 10px;
-    margin-left: 200px;
+    margin-left: 15vw;
     text-align: justify;
 }
 
@@ -83,41 +83,26 @@ body {
     gap: 2vw;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 12.5vw;
-    height: 100vh;
-}
-
 #inIcon{
     background-image: url("../logo.png");
-    width:3vw;
-    height: 3vw;
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 100px;
 }
 
 #ghIcon {
     background-image: url("../github.png");
-    background-color: #1D85FF;
-    border-radius: 100px;
-    width:3vw;
-    height: 3vw;
     background-size: 65%;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #email{
     background-image: url("../gmail.png");
+    background-size: 65%;
+}
+
+.socialIcons{
     background-color: #1D85FF;
     border-radius: 100px;
     width:3vw;
     height: 3vw;
-    background-size: 65%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -126,8 +111,44 @@ body {
     transition: ease-in, 175ms;
     box-sizing: border-box;
     border: 2px solid white;
+}
+
+.home, .about, .projects, .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;       /* Centers the section */
+    padding: 0 12.5vw;    /* Adds 12.5% padding to left and right */
+    height: 100vh;
+    max-width: 1200px;    /* Optional: restricts max width for large screens */
+    box-sizing: border-box;
+}
+
+#cards {
+    display:flex;
+    background-color: grey;
+    height: 300px;
+    width: fit-content;
+    justify-content: space-between;
+    gap: 40px;
 
 }
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    margin-top: 15vh;
+}
+
 
 
 
