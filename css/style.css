@@ -12,14 +12,12 @@ body {
     height: fit-content;
     align-items: center;
     margin-top: 40px;
-
-
 }
 
 .bigText {
     display: flex;
     justify-content: flex-start;
-    font-size: 70px;
+    font-size: 90px;
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
 }
@@ -43,7 +41,7 @@ body {
 #navbar li {
     margin: 50px 50px 40px 0;
     list-style-type: none;
-    font-size: 13px;
+    font-size: 18px;
     text-decoration: none;
     text-decoration-color: #222222;
     color: rgba(255, 255, 255, 0.25);
@@ -69,9 +67,10 @@ body {
 
 .introduction {
     justify-content: flex-end;
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 15vw;
     text-align: justify;
+    line-height: 1.6;
 }
 
 .mediaButtons {
@@ -84,25 +83,25 @@ body {
 }
 
 #inIcon{
-    background-image: url("../logo.png");
+    background-image: url("../img/logo.png");
     background-size: contain;
 }
 
 #ghIcon {
-    background-image: url("../github.png");
+    background-image: url("../img/github.png");
     background-size: 65%;
 }
 
 #email{
-    background-image: url("../gmail.png");
+    background-image: url("../img/gmail.png");
     background-size: 65%;
 }
 
 .socialIcons{
     background-color: #1D85FF;
     border-radius: 100px;
-    width:3vw;
-    height: 3vw;
+    width: 50px;
+    height: 50px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -116,28 +115,71 @@ body {
 .home, .about, .projects, .contact {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;       /* Centers the section */
-    padding: 0 12.5vw;    /* Adds 12.5% padding to left and right */
-    height: 100vh;
-    max-width: 1200px;    /* Optional: restricts max width for large screens */
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 100vh; /* Full viewport height */
+
     box-sizing: border-box;
 }
 
 #cards {
-    display:flex;
-    background-color: grey;
-    height: 300px;
-    width: fit-content;
-    justify-content: space-between;
-    gap: 40px;
-
+    margin-top: 5vh;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: fit-content; /* Fixed height for the cards container */
+    max-width: 80vw; /* Width of the cards container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 60px; /* Space between cards */
+    padding: 10px; /* Optional: Adds some padding around the cards */
 }
 
-.card{
-    background-color: white;
+.card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     border-radius: 10px;
-    width: 300px;
-    height: 50px;
+    height: 400px;
+    color: black;
+    min-width: 30%; /* Ensures cards have a minimum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.cardHeader{
+    font-size: 25px;
+    font-weight: bold;
+    color: #1D85FF;
+    padding: 0; /* Removes any unwanted padding */
+    margin: 0;
+}
+
+.test{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.cardLink{
+    display:flex;
+    justify-content: flex-start;
+    color: #006dff;
+    font-size: 15px;
+    margin: 10px 10px 0 0;
+    text-underline-offset: 3px;
+}
+
+.cardText{
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+}
+
+.cardImage1{
+    background-image: url("../img/dog.jpg");
+    width: 100%;
+    height: 175px;
+
+    background-size: cover; /* Makes the image cover the div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
 }
 
 .header {
