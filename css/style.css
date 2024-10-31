@@ -123,9 +123,9 @@ body {
 }
 
 #cards {
-    margin-top: 5vh;
+    margin-top: 2vh;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.1);
+
     height: fit-content; /* Fixed height for the cards container */
     max-width: 80vw; /* Width of the cards container */
     overflow-x: auto; /* Enable horizontal scrolling */
@@ -135,54 +135,62 @@ body {
 
 .card {
     display: flex;
+    background-color: #2c2c2c;
     justify-content: flex-start;
     flex-direction: column;
     border-radius: 10px;
     height: 400px;
     color: black;
     min-width: 30%; /* Ensures cards have a minimum width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75) /* Optional: Add shadow for depth */
+
 }
 
 .cardHeader{
     font-size: 25px;
     font-weight: bold;
-    color: #1D85FF;
-    padding: 0; /* Removes any unwanted padding */
-    margin: 0;
+    color: white;
+    padding: 10px; /* Removes any unwanted padding */
+    margin: 10px 0 0 15px;
+
+    border-radius: 9px 9px 0 0;
 }
 
 .test{
     display: flex;
     justify-content: flex-start;
-
+    padding-left: 25px;
 }
+
 .cardLink{
     display:flex;
     justify-content: flex-start;
     color: #006dff;
     font-size: 15px;
-    margin: 10px 10px 0 0;
+    margin: 0 10px 0 0;
     text-underline-offset: 3px;
+
 }
 
 .cardText{
     font-size: 12px;
     line-height: 1.5;
     color: white;
+    padding: 10px 20px 0 20px;
 }
 
 .cardImage1{
     background-image: url("../img/dog.jpg");
     width: 100%;
     height: 175px;
-
+    border-radius: 9px 9px 0 0;
     background-size: cover; /* Makes the image cover the div */
     background-position: center; /* Centers the image within the div */
     background-repeat: no-repeat; /* Prevents tiling of the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.header {
+.title {
     display: flex;
     justify-content: flex-start;
     font-size: 50px;
