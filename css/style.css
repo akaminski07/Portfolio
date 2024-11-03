@@ -8,11 +8,14 @@ body {
 
 .jumbotron {
     display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     width: 80vw;
     height: fit-content;
-    align-items: center;
-    margin-top: 40px;
+    margin-top: 15vh;
+
 }
+
 
 .bigText {
     display: flex;
@@ -21,6 +24,8 @@ body {
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
 }
+
+
 
 #navbar {
     display: flex;
@@ -146,8 +151,41 @@ body {
 
 }
 
+@media (min-width: 1024px) {
+    .bigText {
+        font-size: 120px; /* Increase font size for desktop */
+    }
+
+    .cardHeader {
+        font-size: 40px; /* Slightly larger font size for desktop */
+    }
+
+    /* Adjust other text sizes as needed */
+    .introduction, .cardText {
+        font-size: 14px; /* Slightly larger for readability on desktops */
+    }
+
+    .socialIcons {
+        width: 65px;
+        height: 65px;
+    }
+
+    #navbar li {
+        font-size: 20px;       /* Increase font size */
+        padding: 40px 10px;     /* Increase padding */
+        margin: 0 40px;         /* Add more space between links */
+    }
+
+    #navbar {
+        padding: 20px 0;       /* Increase navbar height */
+    }
+
+
+
+}
+
 .cardHeader{
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bold;
     color: white;
     padding: 10px; /* Removes any unwanted padding */
