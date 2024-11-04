@@ -12,41 +12,55 @@ body {
     justify-content: center; /* Center items horizontally */
     width: 80vw;
     height: fit-content;
-    margin-top: 13vh;
+    margin-top: 8vh;
 
 }
 
-.bigText {
+.textContainer {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align text to the left */
+}
+
+.myNameIs{
+    font-size: 3rem;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bigText {
     font-size: 90px;
-    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
 }
 
 #navbar {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
-    position: sticky;
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 1;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(4, auto); /* Create 4 columns, each wide enough for its content */
+    gap: 6vw; /* Space between the items */
+    background-color: #222222; /* Background color */
+    padding: 12px 30px; /* Padding for some space around the items */
+    position: sticky; /* Keep navbar at the top when scrolling */
+    top: 4vh; /* Position it at the top of the viewport */
+    z-index: 1; /* Ensure it stays above other content */
+    width: fit-content;
+    margin: 8vh 55vw;
+    border-radius: 32px;
+    align-items: center;
+}
+
+#navbar li {
+    list-style-type: none; /* Remove bullets */
+    font-size: 18px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    color: rgba(255, 255, 255, 0.25); /* Color */
+    transition: color 0.23s ease-in; /* Transition for hover effect */
 }
 
 #navbar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
-}
-
-#navbar li {
-    margin: 50px 50px 40px 0;
-    list-style-type: none;
-    font-size: 18px;
-    text-decoration: none;
-    text-decoration-color: #222222;
-    color: rgba(255, 255, 255, 0.25);
 }
 
 #navbar li:hover {
@@ -70,7 +84,7 @@ body {
 .introduction {
     justify-content: flex-end;
     font-size: 12px;
-    margin-left: 15vw;
+    margin-left: 26vw;
     text-align: justify;
     line-height: 1.6;
 }
@@ -80,7 +94,7 @@ body {
     width: fit-content;
     height: fit-content;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2vh;
     gap: 2vw;
 }
 
@@ -117,22 +131,19 @@ body {
 .home, .about, .projects, .contact {
     display: flex;
     flex-direction: column;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 0 10vw;
     height: 100vh; /* Full viewport height */
 
     box-sizing: border-box;
 }
 
 #cards {
-    margin-top: 2vh;
-    display: flex;
-
-    height: fit-content; /* Fixed height for the cards container */
-    max-width: 80vw; /* Width of the cards container */
+    margin-top: 10vh; /* Margin above the cards section */
+    display: flex; /* Use flexbox to arrange items in a row */
     overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 60px; /* Space between cards */
-    padding: 10px; /* Optional: Adds some padding around the cards */
+    padding: 10px; /* Padding around the cards container */
+    gap: 20px; /* Space between cards */
+    max-width: 100%; /* Ensure it takes full width of the container */
 }
 
 .card {
@@ -150,7 +161,7 @@ body {
 
 @media (min-width: 1900px) {
     .bigText {
-        font-size: 120px; /* Increase font size for desktop */
+        font-size: 100px; /* Increase font size for desktop */
     }
 
     .cardHeader {
@@ -163,19 +174,11 @@ body {
     }
 
     .socialIcons {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
     }
 
-    #navbar li {
-        font-size: 20px;       /* Increase font size */
-        padding: 40px 10px;     /* Increase padding */
-        margin: 0 40px;         /* Add more space between links */
-    }
 
-    #navbar {
-        padding: 20px 0;       /* Increase navbar height */
-    }
 
 
 
@@ -207,6 +210,8 @@ body {
 
 }
 
+
+
 .cardText{
     font-size: 12px;
     line-height: 1.5;
@@ -232,4 +237,9 @@ body {
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
     margin-top: 15vh;
+}
+
+mark{
+    color: #1D85FF;
+    background: none;
 }
