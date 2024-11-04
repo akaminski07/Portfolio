@@ -23,7 +23,7 @@ body {
 }
 
 .myNameIs{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -31,6 +31,11 @@ body {
     font-size: 90px;
     text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
+}
+
+.about .bigText {
+    margin-top: 20vh;
+    font-size: 70px;
 }
 
 #navbar {
