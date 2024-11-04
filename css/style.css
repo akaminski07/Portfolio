@@ -12,10 +12,9 @@ body {
     justify-content: center; /* Center items horizontally */
     width: 80vw;
     height: fit-content;
-    margin-top: 15vh;
+    margin-top: 13vh;
 
 }
-
 
 .bigText {
     display: flex;
@@ -24,8 +23,6 @@ body {
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
 }
-
-
 
 #navbar {
     display: flex;
@@ -151,7 +148,7 @@ body {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1900px) {
     .bigText {
         font-size: 120px; /* Increase font size for desktop */
     }
