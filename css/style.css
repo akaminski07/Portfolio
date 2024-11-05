@@ -1,9 +1,27 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #3c3c3c; /* Background of the scrollbar track */
 
 }
 
+::-webkit-scrollbar-thumb {
+    background: #006dff; /* Color of the scrollbar handle */
+    border-radius: 8px; /* Rounded edges for the scrollbar handle */
+}
 
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #004baf; /* Color when hovering over the scrollbar handle */
+}
 
 body {
     font-family: 'Days One', sans-serif;
@@ -22,7 +40,6 @@ body {
     width: 80vw;
     height: fit-content;
     margin-top: 8vh;
-
 }
 
 .textContainer {
@@ -31,18 +48,15 @@ body {
     align-items: flex-start; /* Align text to the left */
 }
 
-.aboutContainer{
+.aboutContainer {
     display: flex;
     align-items: flex-start;
     gap: 16vw;
-
-
 }
 
-.myNameIs{
+.myNameIs {
     font-size: 2.3rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 .title {
@@ -60,7 +74,6 @@ body {
 .aboutTitle {
     margin-top: 12vh;
     margin-bottom: 3vh;
-
 }
 
 .contactTitle {
@@ -68,11 +81,11 @@ body {
     margin-top: 15vh;
 }
 
-.projectsTitle{
+.projectsTitle {
     display: flex;
     justify-content: center;
     height: fit-content;
-    padding:0;
+    padding: 0;
     margin-top: 15vh;
     margin-bottom: 5vh;
 }
@@ -107,17 +120,6 @@ body {
     list-style-type: none;
     padding: 0;
 }
-/* Existing CSS code remains unchanged until the media queries */
-
-/* Existing CSS code remains unchanged until the media queries */
-
-
-    /* Adjust the navbar for smaller screens */
-
-
-
-/* Additional media queries can be added for even smaller screens if necessary */
-
 
 #navbar li:hover {
     transition: color 0.23s ease-in, text-decoration 0.23s;
@@ -129,7 +131,7 @@ body {
     cursor: pointer;
 }
 
-#navbar li:active{
+#navbar li:active {
     color: black;
 }
 
@@ -148,16 +150,22 @@ body {
     text-align: justify;
     line-height: 1.6;
 }
-.mediaButtons {
-    display: flex;
-    flex-direction: row; /* Ensure media buttons are in a row */
-    justify-content: flex-start; /* Center the social buttons */
-    margin-left: 4vw;
-    margin-top: 3vh;
-    gap: 1rem; /* Space between the buttons */
+
+.introduction p{
+    padding: 0;
+    margin: 0;
 }
 
-#inIcon{
+.mediaButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 4vw;
+    margin-top: 3vh;
+    gap: 1rem;
+}
+
+#inIcon {
     background-image: url("../img/logo.png");
     background-size: contain;
 }
@@ -167,12 +175,12 @@ body {
     background-size: 65%;
 }
 
-#email{
+#email {
     background-image: url("../img/gmail.png");
     background-size: 65%;
 }
 
-.socialIcons{
+.socialIcons {
     background-color: #1D85FF;
     border-radius: 100px;
     width: 50px;
@@ -182,13 +190,13 @@ body {
 
 }
 
-#email:hover, #ghIcon:hover, #inIcon:hover{
+#email:hover, #ghIcon:hover, #inIcon:hover {
     transition: ease-in, 175ms;
     box-sizing: border-box;
     border: 2px solid white;
 }
 
-.introHeader{
+.introHeader {
     font-size: 2rem;
     margin-bottom: 2vh;
 }
@@ -201,67 +209,57 @@ body {
     max-width: 100%;
 }
 
-.about{
-
+.about {
     max-height: 100vh;
     margin-bottom: 15vh;
-
 }
 
 
-
-
-.fullViewHeight{
+.fullViewHeight {
     height: 100vh;
 }
 
-.fitContent{
+.fitContent {
     height: fit-content;
 }
 
-.aboutImage{
+.aboutImage {
     background-image: url("../img/aboutImage.png");
-    background-size: cover; /* Ensure the image covers the div */
-    background-position: center; /* Center the image */
-    width: 460px; /* Full width */
-    height: 460px; /* Set height */
-    margin-top: 20px; /* Space above the image */
-
+    background-size: cover;
+    background-position: center;
+    width: 460px;
+    height: 460px;
+    margin-top: 20px;
 }
 
-.about h1{
+.about h1 {
     font-size: 1.3rem;
-    /* color: #1D85FF;*/
     margin: 0 0 0 1vw;
-
 }
 
-p{
-    margin:  0;
+p {
+    margin: 0;
     padding: 0;
 }
 
-.about p{
+.about p {
     margin: 0 0 1.5em 0;
 }
 
 .aboutText {
-    flex: 1; /* Allow text container to take available space */
+    flex: 1;
     line-height: 1.6;
     font-size: 0.9rem;
     color: white;
     margin: 0;
 }
 
-
-
-
 #cards {
-    margin-top: 0; /* Margin above the cards section */
-    display: grid; /* Use flexbox to arrange items in a row */
+    margin-top: 0;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 0 7.5vw; /* Padding around the cards container */
-    gap: 50px 0; /* Space between cards */
+    padding: 0 7.5vw;
+    gap: 50px 0;
 }
 
 .card {
@@ -273,28 +271,32 @@ p{
     border-radius: 10px;
     height: 400px;
     color: black;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75) /* Optional: Add shadow for depth */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75); /* Optional: Add shadow for depth */
+    transition: ease-in 250ms;
 }
 
+.card:hover {
+    transform: scale(1.075);
+    transition: ease-out 500ms;
+}
 
-.cardHeader{
+.cardHeader {
     font-size: 26px;
     font-weight: bold;
     color: white;
-    padding: 10px; /* Removes any unwanted padding */
+    padding: 10px;
     margin: 10px 0 0 15px;
-
     border-radius: 9px 9px 0 0;
 }
 
-.linkDiv{
+.linkDiv {
     display: flex;
     justify-content: flex-start;
     padding-left: 25px;
 }
 
-.cardLink{
-    display:flex;
+.cardLink {
+    display: flex;
     justify-content: flex-start;
     color: #006dff;
     font-size: 15px;
@@ -302,77 +304,75 @@ p{
     text-underline-offset: 3px;
 }
 
-.cardLink:hover{
-    color:white;
+.cardLink:hover {
+    color: white;
     transition: ease-in, 225ms;
 }
 
-.cardLink:active{
+.cardLink:active {
     color: rgb(189, 189, 189);
 }
 
-.cardText{
+.cardText {
     font-size: 12px;
     line-height: 1.5;
     color: white;
     padding: 10px 20px 0 20px;
 }
 
-.cardImage{
-
+.cardImage {
     width: 100%;
     height: 175px;
     border-radius: 9px 9px 0 0;
-    background-size: cover; /* Makes the image cover the div */
-    background-position: center; /* Centers the image within the div */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.imgVijfluik{
+.imgVijfluik {
     background-image: url("../img/vijfluik.png");
-
 }
 
-.imgGoFit{
+.imgGoFit {
     background-image: url("../img/gofit.png");
     background-size: 60%;
     background-color: #006dff;
 }
 
-.imgDesign{
+.imgDesign {
     background-image: url("../img/clothingDesign.png");
 }
 
-.imgVideomapping{
+.imgVideomapping {
     background-image: url("../img/videomapgif.gif");
 }
 
-.imgRonin{
+.imgRonin {
     background-image: url("../img/RoninGif.gif");
 }
 
-.imgSkyJump{
+.imgSkyJump {
     background-image: url("../img/skyJumpGif.gif");
 }
 
-.imgFrogger{
+.imgFrogger {
     background-image: url("../img/frogger.gif");
 }
 
-.contact p{
+.contact p {
     margin-top: 20px;
 }
 
-mark{
+mark {
     color: #1D85FF;
     background: none;
 }
 
 .contactInputContainer {
     display: flex;
-    gap: 20px; /* Space between Name/Email and Message sections */
-    align-items: flex-start; /* Align inputs at the top */
+    gap: 20px;
+    align-items: flex-start;
     margin-top: 10vh;
 
 }
@@ -380,7 +380,7 @@ mark{
 .inputColumn {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between Name and Email fields */
+    gap: 15px;
 }
 
 .inputGroup {
@@ -390,7 +390,7 @@ mark{
 }
 
 .inputGroup p {
-    margin: 0 0 5px 0; /* Spacing below labels */
+    margin: 0 0 5px 0;
 }
 
 .inputField {
@@ -401,18 +401,34 @@ mark{
 }
 
 .messageField {
-    width: 400px; /* Make the Message input longer */
+    width: 400px;
     height: 120px;
 }
 
 .sendMessage {
     height: 40px;
     width: 100px;
-    margin-top: 20px; /* Add space above the send button */
+    margin-top: 20px;
+    font-family: 'Days One', sans-serif;
+    border: #ffffff 2px solid;
+    background: none;
+    color: white;
+}
+
+.sendMessage:hover {
+    transition: linear;
+    background-color: #1D85FF;
+    color: black;
+    border: none;
+
+}
+
+.sendMessage:active {
+    background-color: rgba(29, 133, 255, 0.51);
 }
 
 .footer {
-    display:flex;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.84);
     width: 100%;
     height: 200px;
@@ -422,117 +438,116 @@ mark{
 
 @media (max-width: 768px) {
     .title {
-        font-size: 50px; /* Reduce title size on smaller screens */
+        font-size: 50px;
     }
 
-    .footer{
+
+    .footer {
         flex-direction: column;
     }
 
     .introduction {
-        margin: 8vh 10vw auto auto; /* Center align introduction */
-        line-height: 1.4; /* Adjust line height for better readability */
+        margin: 8vh 10vw auto auto;
+        line-height: 1.4;
 
     }
 
 
-
     .aboutContainer {
-        flex-direction: column; /* Stack the about section items */
-        align-items: center; /* Center align items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .contactInputContainer {
-        flex-direction: column; /* Stack contact fields */
+        flex-direction: column;
     }
 
     .inputField, .messageField {
-        width: 100%; /* Make input fields full width */
+        width: 100%;
     }
 
-    .aboutText p{
-       font-size: 0.7rem;
+    .aboutText p {
+        font-size: 0.7rem;
     }
+
     .mediaButtons {
         margin-top: 3vh;
         margin-left: 0;
-        flex-direction: row; /* Maintain row layout for mobile */
-        justify-content: center; /* Center the buttons horizontally */
+        flex-direction: row;
+        justify-content: center;
     }
 
     .card {
-        width: 90%; /* Make cards full width with margin */
-        margin: 0 auto; /* Center cards */
+        width: 90%;
+        margin: 0 auto;
     }
-
 
 
     #navbar {
-        display: flex; /* Use flex to align items in a row */
-        flex-direction: row; /* Keep items in a row */
-        justify-content: center; /* Center items horizontally */
-        margin: 3vh 0 0 0; /* Center the navbar with automatic margins */
         top: 1.5vh;
-        padding: 2vh 0; /* Adjust vertical padding */
-        width: 100%; /* Full width for the navbar */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 3vh 0 0 0;
+
+        padding: 3vh 0;
+        width: 100%;
     }
 
     #navbar li {
-        font-size: 16px; /* Slightly reduce font size */
-        margin: 0 10px; /* Space between navbar items */
+        font-size: 16px;
+        margin: 0 10px;
     }
 
     .title {
-        font-size: 50px; /* Reduce title size on smaller screens */
-        text-align: center; /* Center align titles */
+        font-size: 50px;
+        text-align: center;
     }
 
     .jumbotron {
-        flex-direction: column; /* Stack items in jumbotron */
-        align-items: center; /* Center items */
-        width: 90vw; /* Adjust width */
-        margin-top: 5vh; /* Adjust margin */
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 5vh;
     }
 
     .aboutContainer {
-        flex-direction: column; /* Stack the about section items */
-        align-items: center; /* Center align items */
-        gap: 2vh; /* Space between stacked items */
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
         margin-bottom: 10vh;
     }
 
 
     .contactInputContainer {
-        flex-direction: column; /* Stack contact fields */
+        flex-direction: column;
         justify-content: center;
-        align-items: center; /* Center align contact fields */
-        width: 100%; /* Full width for inputs */
+        align-items: center;
+        width: 100%;
     }
 
     .messageField, .sendMessage, .inputField {
-        width: 80vw; /* Make input fields full width */
+        width: 80vw;
 
-        margin: 1vh auto; /* Center inputs */
+        margin: 1vh auto;
     }
-
 
 
     .card {
-        width: 90%; /* Make cards full width with margin */
-        margin: 0 auto; /* Center cards */
+        width: 90%;
+        margin: 0 auto;
     }
 
     .aboutImage {
-        width: 300px; /* Responsive image width */
-        height: 300px; /* Maintain aspect ratio */
+        width: 300px;
+        height: 300px;
     }
 
-    .homeTitle{
+    .homeTitle {
         margin-top: 5vh;
     }
 
-    .introHeader{
+    .introHeader {
         text-align: left;
     }
 }
-

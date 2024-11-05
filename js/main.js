@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     function myFunction() {
         // Define the email to be copied
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const scroll = document.getElementById("navbar");
     const sections = document.querySelectorAll(".home, .about, .projects, .contact");
 
-    scroll.addEventListener("click", function(evt) {
-        const button =  evt.target.id;
+    scroll.addEventListener("click", function (evt) {
+        const button = evt.target.id;
         const section = document.querySelector(`.${button}`);
 
         if (section) {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
 
-        if (button === "home"){
+        if (button === "home") {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         evt.preventDefault();
     }, true);
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         let currentSection = "";
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Remove 'currentPage' from all nav items
         document.querySelectorAll("#navbar li").forEach(li => {
-            li.classList.remove("currentPage");
+            //li.classList.remove("currentPage");
+            li.removeAttribute("class")
         });
 
         // Add 'currentPage' to the nav item corresponding to the current section
