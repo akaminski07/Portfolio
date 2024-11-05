@@ -1,3 +1,7 @@
+
+
+
+
 body {
     font-family: 'Days One', sans-serif;
     margin: 0;
@@ -34,6 +38,10 @@ body {
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
+.title {
+    font-size: 80px;
+}
+
 .homeTitle {
     font-size: 80px;
     text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
@@ -43,16 +51,16 @@ body {
 
 .aboutTitle {
     margin-top: 15vh;
-    font-size: 80px;
+
 }
 
 .contactTitle {
-
+    font-size: 60px;
+    margin-top: 15vh;
 }
 
 .projectsTitle{
     display: flex;
-    font-size: 80px;
     justify-content: center;
     height: fit-content;
     margin-top: 15vh;
@@ -161,18 +169,17 @@ body {
     flex-direction: column;
     margin: 0 10vw;
     box-sizing: border-box;
-
 }
 
-.fullViewWidth{
+
+
+.fullViewHeight{
     height: 100vh;
 }
 
 .fitContent{
     height: fit-content;
 }
-
-
 
 .aboutImage{
     background-image: url("../img/aboutImage.png");
@@ -208,28 +215,9 @@ p{
 
 }
 
-#cards {
-    margin-top: 0; /* Margin above the cards section */
-    display: grid; /* Use flexbox to arrange items in a row */
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 200px; /* Padding around the cards container */
-    gap: 50px 0; /* Space between cards */
-}
-
-.card {
-    display: flex;
-    width: 350px;
-    background-color: #2c2c2c;
-    justify-content: flex-start;
-    flex-direction: column;
-    border-radius: 10px;
-    height: 400px;
-    color: black;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75) /* Optional: Add shadow for depth */
-}
 
 @media (min-width: 1900px) {
-    .homeTitle, .projectsTitle, .aboutTitle, .contactTitle {
+    .title {
         font-size: 90px; /* Increase font size for desktop */
     }
 
@@ -250,6 +238,27 @@ p{
 
 }
 
+#cards {
+    margin-top: 0; /* Margin above the cards section */
+    display: grid; /* Use flexbox to arrange items in a row */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 200px; /* Padding around the cards container */
+    gap: 50px 0; /* Space between cards */
+}
+
+.card {
+    display: flex;
+    width: 350px;
+    background-color: #2c2c2c;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 400px;
+    color: black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75) /* Optional: Add shadow for depth */
+}
+
+
 .cardHeader{
     font-size: 26px;
     font-weight: bold;
@@ -260,7 +269,7 @@ p{
     border-radius: 9px 9px 0 0;
 }
 
-.test{
+.linkDiv{
     display: flex;
     justify-content: flex-start;
     padding-left: 25px;
@@ -275,8 +284,6 @@ p{
     text-underline-offset: 3px;
 
 }
-
-
 
 .cardText{
     font-size: 12px;
@@ -296,15 +303,51 @@ p{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.contact .title{
-
+.contact p{
+    margin-top: 20px;
 }
 
 mark{
     color: #1D85FF;
     background: none;
-
-
 }
+
+.contactInputContainer {
+    display: flex;
+    gap: 20px; /* Space between Name/Email and Message sections */
+    align-items: flex-start; /* Align inputs at the top */
+}
+
+.inputColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between Name and Email fields */
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputGroup p {
+    margin: 0 0 5px 0; /* Spacing below labels */
+}
+
+.inputField {
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.messageField {
+    width: 400px; /* Make the Message input longer */
+    height: 120px;
+}
+
+.sendMessage {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px; /* Add space above the send button */
+}
+
