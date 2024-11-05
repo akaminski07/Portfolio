@@ -22,21 +22,43 @@ body {
     align-items: flex-start; /* Align text to the left */
 }
 
+.aboutContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 20vw;
+    margin-top: 5vh;
+}
+
 .myNameIs{
     font-size: 2.5rem;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
-.bigText {
-    font-size: 90px;
+.homeTitle {
+    font-size: 80px;
     text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5);
     height: fit-content;
+    margin-left: 3vw;
 }
 
-.about .bigText {
-    margin-top: 20vh;
-    font-size: 70px;
+.aboutTitle {
+    margin-top: 15vh;
+    font-size: 80px;
 }
+
+.contactTitle {
+
+}
+
+.projectsTitle{
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
+
 
 #navbar {
     display: grid; /* Use CSS Grid */
@@ -89,7 +111,7 @@ body {
 .introduction {
     justify-content: flex-end;
     font-size: 12px;
-    margin-left: 26vw;
+    margin-left: 22vw;
     text-align: justify;
     line-height: 1.6;
 }
@@ -99,7 +121,7 @@ body {
     width: fit-content;
     height: fit-content;
     justify-content: space-between;
-    margin-top: 2vh;
+    margin: 2vh 0 0 3vw;
     gap: 2vw;
 }
 
@@ -125,6 +147,7 @@ body {
     height: 50px;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 #email:hover, #ghIcon:hover, #inIcon:hover{
@@ -137,36 +160,77 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 10vw;
-    height: 100vh; /* Full viewport height */
-
     box-sizing: border-box;
+
+}
+
+.fullViewWidth{
+    height: 100vh;
+}
+
+.fitContent{
+    height: fit-content;
+}
+
+
+
+.aboutImage{
+    background-image: url("../img/aboutImage.png");
+    background-size: contain;
+    width: 520px;
+    height: 520px;
+    margin-top: -6vh;
+
+}
+
+.about h1{
+    font-size: 1.4rem;
+   /* color: #1D85FF;*/
+    margin: 0 0 0 1vw;
+
+}
+
+p{
+    margin:  0;
+    padding: 0;
+}
+
+.about p{
+    margin: 0 0 1.5em 0;
+}
+
+.aboutText {
+    flex: 1; /* Allow text container to take available space */
+    line-height: 1.6;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+
 }
 
 #cards {
-    margin-top: 10vh; /* Margin above the cards section */
-    display: flex; /* Use flexbox to arrange items in a row */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 10px; /* Padding around the cards container */
-    gap: 20px; /* Space between cards */
-    max-width: 100%; /* Ensure it takes full width of the container */
+    margin-top: 0; /* Margin above the cards section */
+    display: grid; /* Use flexbox to arrange items in a row */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 200px; /* Padding around the cards container */
+    gap: 50px 0; /* Space between cards */
 }
 
 .card {
     display: flex;
+    width: 350px;
     background-color: #2c2c2c;
     justify-content: flex-start;
     flex-direction: column;
     border-radius: 10px;
     height: 400px;
     color: black;
-    min-width: 30%; /* Ensures cards have a minimum width */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75) /* Optional: Add shadow for depth */
-
 }
 
 @media (min-width: 1900px) {
-    .bigText {
-        font-size: 100px; /* Increase font size for desktop */
+    .homeTitle, .projectsTitle, .aboutTitle, .contactTitle {
+        font-size: 90px; /* Increase font size for desktop */
     }
 
     .cardHeader {
@@ -182,9 +246,6 @@ body {
         width: 55px;
         height: 55px;
     }
-
-
-
 
 
 }
@@ -235,16 +296,15 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.title {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 50px;
-    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-    height: fit-content;
-    margin-top: 15vh;
+
+
+.contact .title{
+
 }
 
 mark{
     color: #1D85FF;
     background: none;
+
+
 }
