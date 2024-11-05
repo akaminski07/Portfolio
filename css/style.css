@@ -192,7 +192,7 @@ body {
 
 .about h1{
     font-size: 1.4rem;
-   /* color: #1D85FF;*/
+    /* color: #1D85FF;*/
     margin: 0 0 0 1vw;
 
 }
@@ -216,7 +216,7 @@ p{
 }
 
 
-@media (min-width: 1900px) {
+@media (min-width: 1024px) {
     .title {
         font-size: 90px; /* Increase font size for desktop */
     }
@@ -241,7 +241,7 @@ p{
 #cards {
     margin-top: 0; /* Margin above the cards section */
     display: grid; /* Use flexbox to arrange items in a row */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 0 200px; /* Padding around the cards container */
     gap: 50px 0; /* Space between cards */
 }
@@ -351,3 +351,34 @@ mark{
     margin-top: 20px; /* Add space above the send button */
 }
 
+@media (max-width: 768px) {
+    .title {
+        font-size: 50px; /* Reduce title size on smaller screens */
+    }
+
+    #navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+    }
+
+    .aboutContainer {
+        flex-direction: column; /* Stack the about section items */
+        align-items: center; /* Center align items */
+    }
+
+    .contactInputContainer {
+        flex-direction: column; /* Stack contact fields */
+    }
+
+    .inputField, .messageField {
+        width: 100%; /* Make input fields full width */
+    }
+
+    .mediaButtons {
+        flex-direction: column; /* Stack social buttons on small screens */
+    }
+
+    .card {
+        width: 90%; /* Make cards full width with margin */
+        margin: 0 auto; /* Center cards */
+    }
+}
