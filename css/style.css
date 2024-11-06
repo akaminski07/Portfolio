@@ -277,7 +277,7 @@ p {
 
 .card:hover {
     transform: scale(1.075);
-    transition: ease-out 500ms;
+    transition: ease-out 250ms;
 }
 
 .cardHeader {
