@@ -249,7 +249,7 @@ p {
 .aboutText {
     flex: 1;
     line-height: 1.6;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     color: white;
     margin: 0;
 }
@@ -440,7 +440,6 @@ mark {
     .title {
         font-size: 50px;
     }
-
 
     .footer {
         flex-direction: column;
